@@ -1,0 +1,102 @@
+.announcement-main{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 10vw 10vw;
+    justify-content:space-evenly;
+    padding:5vw 0 5vw 0;
+    background-color: #EEEEEE;
+}
+.announcement-main__header{
+    grid-column:1 / span 2;
+    padding: 5% 0 0 40%;
+    margin-bottom:5%;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    border-bottom:2px solid black;
+}
+.announcement-main__image{
+    width:200px;
+    height:200px;
+}
+.announcement-main__new{
+    display:flex;
+    flex-direction: column;
+   border-right: 2px solid black;
+   padding-right:10%;
+   grid-row: 2 / span 2;
+}
+.announcement-main__new__p{
+    border-bottom: 5px solid black;
+    padding-bottom:5px;
+    font-size: x-large;
+    font-weight: 700;
+}
+.announcement-main li{
+    display:flex;
+    justify-content: center;
+    margin: 10px;   
+}
+.announcement-main__li__p{
+    font-size: larger;
+    font-weight: 700;
+}
+.announcement-main__job{
+    border:2px solid black;
+    padding:10px;
+}
+.announcement-main__job h2{
+    border-bottom:2px solid black;
+}
+.announcement-main__jobs{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    margin:5px;
+    font-weight: 600;
+    justify-content: center;
+    padding:5%;
+}
+.announcement-main__jobs button{
+    width:30%;
+    height:30%;
+    padding:2px;
+    font-weight: 700;
+    margin-left:70%;
+}
+.announcement-main__calander{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.announcement-main__calander table{
+    border:2px solid black;
+    margin:20px;
+}
+@media(min-width:320px) and (max-width:480px){
+    .announcement-main{
+        display:flex;
+        flex-direction: column;
+        padding: 10vw;
+    }
+    .main.active{
+        padding-top:30vh;
+    }
+    .announcement-main__header{
+        padding: 5% 0 0 20%;
+        margin-bottom:5%;
+    }
+    .announcement-main__new{
+       border-right:none;
+       padding-right:0;
+    }
+    .announcement-main__new__p{
+        border-bottom: 2px solid black;
+        padding-bottom:0;
+        font-size: large;
+        font-weight: 700;
+    }
+    .announcement-main__calander h2{
+        border-bottom: 2px solid black;
+    }
+}
