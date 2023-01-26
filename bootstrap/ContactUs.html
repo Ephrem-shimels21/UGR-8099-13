@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <script defer src="js/formValidator.js"></script>
+    <link rel="stylesheet" href="CSS/Header and Footer.css">
+    <link rel="stylesheet" href="CSS/contactUs.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__header-image" src="Photos/ContactusBackground.png" alt="background image for at the header part"><br>
+        <div class="header__log-container" >
+            <img  class ="header__logo-container__logo-image" src="Photos/logo11.png" alt="logo our company">
+        </div>
+        <nav class="header__navigations-container">
+            <ul class="header__navigations-container__unorderd">
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="index.html"> Home</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="DailyStatus.html">Daily Status</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="AvailableCereals.html">Available Cereals</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="OurProperties.html">Our properties</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="Announcements.html">Announcements</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link " href="AboutUs.html">About Us</a></li>
+                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link header__navigations-container__unorderd__current-page" " href="ContactUs.html"> Contact Us</a></li>
+            </ul>
+            <div class="toggler-bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>  
+    </header>    
+   
+    <main class="contact main">
+        <h1>Contact Us</h1>  
+        <div class="contact__text">
+            <section class="contact__FAQ">
+                <a id="FAQ"><h3>FAQ's</h3></a>
+                <ol>
+                    <li> Where do you bring the cereals in your store?</li>
+                    <li> How do you keep the cereals in the store keep clean?</li>
+                    <li>When do your mill house closed in a month?</li>
+                </ol>            
+            </section>
+            <section class="contact__why">
+                <h3>why you visit us?</h3>
+           <p>
+            Now a time getting a good quality cereals with good grinding services together is becoming hard.
+            But we provide this both in one with good website where you can check daily status,and this will help you to manage your precious time.
+            That's why you  contact us.
+           </p>     
+            </section>
+           </div>
+            <form id="form" class="contact-form" action="/">
+                <!-- action="mailto:eph21sz@gmail.com" -->
+              <!-- <div id="text"></div> -->
+                <div class="contact-form__input">
+                    <label for="username"> username</label> 
+                    <input type="text" id="username" name="username">
+                    <div class="error"></div>
+                </div>
+              
+             <div class="contact-form__input">
+                <label for="email">email</label>
+                <input type="text" id="email" name="email">
+                <div class="error"></div>
+            </div>
+               
+             <div class="contact-form__input">
+                <label for="message"> message</label>
+                <textarea type="text" name="message" id="message" cols="30" rows="5"></textarea>
+                <div class="error"></div> 
+            </div>
+                <button class="contact-form__button" type="submit">submit</button>
+             </form>       
+        
+     
+    </main>
+    <footer class="footer">
+        <div class="footer__about-us" >
+        <p class="footer__about-us-head">More about us</p>
+        <ul>
+            <li><a href="AboutUs.html#our_story">our story</a></li>
+            <li><a href="ContactUs.html#FAQ"> FAQ's</a></li>
+            <li><a href="AboutUs.html#Mission">Mission</a></li>
+            <li><a href="AboutUs.html#Goal">Goal</a></li>
+        </ul>
+        </div>
+    <div class="footer__contact">
+        <p class="footer__contact__contact-header">Contact</p>
+        <a href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="Photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
+        <a href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
+    <div class="footer__contact__social-icons">
+            <a  href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
+           <a  href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/twitteicon.png" alt="twitter image icon" ></a>
+           <a  href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
+       </div>    
+    </div>
+    <section class="footer__privacy">
+        <div class="footer__privacy__div">
+            <p class="footer__privacy-rights"> All rights reserved</p>
+            <div class="footer__privacy__div__div">
+                <img class="footer__privacy__copyright--resize" src="Photos/copyrighticon.png" alt="copyright icon image" > 
+                <p class="footer__privacy__year--positioning">2022</p>
+            </div>
+        </div>
+            <p class="footer__privacy__policy--positioning"><a href="Privacy policy.html">privacy policy</a></p> 
+        
+        </section>   
+    </footer>
+    <script defer src="Js/script.js"></script>
+</body>
+</html>
