@@ -1,13 +1,3 @@
-const togglerbars= document.querySelector(".toggler-bars");
-const header__navigations= document.querySelector(".header__navigations-container__unorderd");
-const main = document.querySelector(".main");
-const dailymain =document.querySelector(".daily-status-main");
-togglerbars.addEventListener("click",() => {
-    togglerbars.classList.toggle("active");
-    header__navigations.classList.toggle("active");
-    main.classList.toggle("active");
-    
-})
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email= document.getElementById('email');

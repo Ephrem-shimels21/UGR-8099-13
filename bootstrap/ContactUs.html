@@ -6,110 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContactUs</title>
     <script defer src="js/formValidator.js"></script>
-    <link rel="stylesheet" href="CSS/Header and Footer.css">
-    <link rel="stylesheet" href="CSS/contactUs.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.contact-form__input.success input {
+    border-color: #088178;
+}
+.contact-form__input.error input {
+    border-color: rgb(225, 70, 56);
+}
+.contact-form__input  .error {
+    color: rgba(226, 59, 33, 0.876);
+    font-size:13px;
+    height: 10px;
+}
+</style>
 </head>
 <body>
-    <header class="header">
-        <img class="header__header-image" src="Photos/ContactusBackground.png" alt="background image for at the header part"><br>
-        <div class="header__log-container" >
-            <img  class ="header__logo-container__logo-image" src="Photos/logo11.png" alt="logo our company">
-        </div>
-        <nav class="header__navigations-container">
-            <ul class="header__navigations-container__unorderd">
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="index.html"> Home</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="DailyStatus.html">Daily Status</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="AvailableCereals.html">Available Cereals</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="OurProperties.html">Our properties</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="Announcements.html">Announcements</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link " href="AboutUs.html">About Us</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link header__navigations-container__unorderd__current-page" " href="ContactUs.html"> Contact Us</a></li>
-            </ul>
-            <div class="toggler-bars">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header class="position-relative" style="height:320px;">
+        <img class="h-100 w-100 img-fluid" src="Photos/DailyStatusbackground.png" alt="background image for at the header part">   
+        <img  class =" img-fluid rounded-circle  position-absolute top-0 start-0 ms-1" src="Photos/logo11.png" alt="logo our company" style="height:150px;width:150px;">
+        <nav class="navbar navbar-expand-sm  position-absolute bottom-0 end-0  nav-tabs navbar-light" style="background-color: #717568;">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler btn-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item"><a class="nav-link  text-dark fs-5 "  href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5 " href="DailyStatus.html">Daily Status</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="AvailableCereals.html">Available Cereals</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="OurProperties.html">Our properties</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="Announcements.html">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item "><a class="nav-link text-dark fs-5 active" aria-current ="page" href="ContactUs.html"> Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-        </nav>  
-    </header>    
+          </nav>
+</header>
    
-    <main class="contact main">
-        <h1>Contact Us</h1>  
-        <div class="contact__text">
-            <section class="contact__FAQ">
-                <a id="FAQ"><h3>FAQ's</h3></a>
-                <ol>
+    <main class="container-fluid row gy-5 p-5 bg-light">
+        <h1 class="col-sm-12 fw-bold text-center">Contact Us</h1>  
+        <div class="col-sm-6 ">
+            <section class=" mb-5">
+                <a id="FAQ"><h3 class="text-center fw-bold">FAQ's</h3></a>
+                <ol class="fs-6 fw-bold">
                     <li> Where do you bring the cereals in your store?</li>
                     <li> How do you keep the cereals in the store keep clean?</li>
                     <li>When do your mill house closed in a month?</li>
                 </ol>            
             </section>
-            <section class="contact__why">
-                <h3>why you visit us?</h3>
-           <p>
+            <section class=" mt-5">
+                <h3 class="text-center fw-bold">why you visit us?</h3>
+           <p class="fw-bold fs-6">
             Now a time getting a good quality cereals with good grinding services together is becoming hard.
             But we provide this both in one with good website where you can check daily status,and this will help you to manage your precious time.
             That's why you  contact us.
            </p>     
             </section>
+
            </div>
-            <form id="form" class="contact-form" action="/">
-                <!-- action="mailto:eph21sz@gmail.com" -->
-              <!-- <div id="text"></div> -->
-                <div class="contact-form__input">
-                    <label for="username"> username</label> 
-                    <input type="text" id="username" name="username">
+            <form id="form" class="col-sm-5 card row  gy-5 contact-form was-validated" action="/">
+                <div class=" form-group col-sm-12 contact-form__input">
+                    <label class="fs-3 fw-bold form-label" for="username">Name*:</label> 
+                    <input type="text" class="form-control" id="username" name="username" required>
+                    <div class="invalid-feedback"> You didn't enter your name enter first to proceed</div>
                     <div class="error"></div>
                 </div>
               
-             <div class="contact-form__input">
-                <label for="email">email</label>
-                <input type="text" id="email" name="email">
+             <div class="form-group col-sm-12 contact-form__input">
+                <label class="fs-3 fw-bold form-label" for="email">Email*:</label>
+                <input type="text" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback"> you didn't enter email account, enter to proceed</div>
                 <div class="error"></div>
             </div>
                
-             <div class="contact-form__input">
-                <label for="message"> message</label>
-                <textarea type="text" name="message" id="message" cols="30" rows="5"></textarea>
+             <div class="form-group col-sm-12 contact-form__input">
+                <label class="fs-3 fw-bold form-label" for="message"> Message</label>
+                <textarea type="text" name="message"  class="form-control" id="message" cols="30" rows="5"></textarea>
                 <div class="error"></div> 
             </div>
-                <button class="contact-form__button" type="submit">submit</button>
-             </form>       
-        
+                <button class="btn btn-primary col-sm-2" type="submit">submit</button>
+             </form>           
      
     </main>
-    <footer class="footer">
-        <div class="footer__about-us" >
-        <p class="footer__about-us-head">More about us</p>
-        <ul>
-            <li><a href="AboutUs.html#our_story">our story</a></li>
-            <li><a href="ContactUs.html#FAQ"> FAQ's</a></li>
-            <li><a href="AboutUs.html#Mission">Mission</a></li>
-            <li><a href="AboutUs.html#Goal">Goal</a></li>
-        </ul>
-        </div>
-    <div class="footer__contact">
-        <p class="footer__contact__contact-header">Contact</p>
-        <a href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="Photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
-        <a href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
-    <div class="footer__contact__social-icons">
-            <a  href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
-           <a  href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/twitteicon.png" alt="twitter image icon" ></a>
-           <a  href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
-       </div>    
-    </div>
-    <section class="footer__privacy">
-        <div class="footer__privacy__div">
-            <p class="footer__privacy-rights"> All rights reserved</p>
-            <div class="footer__privacy__div__div">
-                <img class="footer__privacy__copyright--resize" src="Photos/copyrighticon.png" alt="copyright icon image" > 
-                <p class="footer__privacy__year--positioning">2022</p>
+    <footer class="container-fluid row gy-5  mt-5 bg-dark pb-5 justify-content-around">
+
+        <div class="border-bottom row m-0 justify-content-around ">
+
+            <div class="col-sm-5 p-0 mb-2 justify-content-center" >
+                <p class="text-white h2 m-4">More about us</p>
+                <ul class="justify-content-center ms-5">
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#our_story">our story</a></li>
+                    <li><a class="text-white text-decoration-none" href="ContactUs.html#FAQ"> FAQ's</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Mission">Mission</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Goal">Goal</a></li>
+                </ul>
             </div>
-        </div>
-            <p class="footer__privacy__policy--positioning"><a href="Privacy policy.html">privacy policy</a></p> 
+
+            <div class="col-sm-5 p-0 mb-2 text-center"> 
+                <p class="text-white h2 m-4">Contact</p>
+                <div class="row gx-0 justify-content-center">
+                <a class="text-white col-sm-5 text-decoration-none" href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
+                <a class="text-white col-sm-5 text-decoration-none" href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
+            </div>
+                
+              <div class="row  justify-content-center">
+                    <a  class="col-3" href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
+                    <a  class="col-3" href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="photos/twitteicon.png" alt="twitter image icon" ></a>
+                    <a  class="col-3" href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
+              </div>
+
+            </div>
+        </div>       
         
-        </section>   
-    </footer>
-    <script defer src="Js/script.js"></script>
+        <section class="row mt-1">
+            <div class="border-end col-sm-2  gx-3">
+                <p class="col text-white"> All rights reserved</p>
+                <div class="row">
+                    <!-- <img class="col"  src="photos/copyrighticon.png" alt="copyright icon image" >  -->
+                    <p class="col-1 pe-0 text-white">&#169</p>
+                    <p class="col text-white">2022</p>
+                </div>
+            </div>
+                <p class="col-sm-2 ml-0"><a class="text-decoration-none text-white" href="Privacy policy.html">privacy policy</a></p> 
+        </section>
+
+        </footer>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

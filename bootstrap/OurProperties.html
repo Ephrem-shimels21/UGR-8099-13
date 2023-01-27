@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OurProperties</title>
-    <link rel="stylesheet" href="CSS/OurProperties.css">
-    <link rel="stylesheet" href="CSS/Header and Footer.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__header-image" src="Photos/ourPropertiesbackground.png" alt="background image for at the header part"><br>
-        <div class="header__log-container" >
-            <img  class ="header__logo-container__logo-image" src="Photos/logo11.png" alt="logo our company">
-        </div>
-        <nav class="header__navigations-container">
-            <ul class="header__navigations-container__unorderd">
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="index.html"> Home</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link"  href="DailyStatus.html">Daily Status</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="AvailableCereals.html">Available Cereals</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link header__navigations-container__unorderd__current-page"" href="OurProperties.html">Our properties</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="Announcements.html">Announcements</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="AboutUs.html">About Us</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="ContactUs.html"> Contact Us</a></li>
-            </ul>
-            <div class="toggler-bars">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header class="position-relative" style="height:320px;">
+        <img class="h-100 w-100 img-fluid" src="Photos/ourPropertiesbackground.png" alt="background image for at the header part">   
+        <img  class =" img-fluid rounded-circle  position-absolute top-0 start-0 ms-1" src="Photos/logo11.png" alt="logo our company" style="height:150px;width:150px;">
+        <nav class="navbar navbar-expand-sm  position-absolute bottom-0 end-0  nav-tabs navbar-light " style="background-color: #717568;" >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler btn-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item"><a class="nav-link   text-dark fs-5 "  href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="DailyStatus.html">Daily Status</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="AvailableCereals.html">Available Cereals</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5 active" aria-current ="page"href="OurProperties.html">Our properties</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="Announcements.html">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item "><a class="nav-link text-dark fs-5" href="ContactUs.html"> Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-        </nav>  
-    </header>    
+          </nav>
+</header>
    
-    <main class="property-main main">
-        <section class="property-main__properties">
+    <main class="container-fluid row  justify-content-around p-5 gy-5">
+        <section class="col-sm-9 pb-3" >
             <p class="property-main__properties__paragraph">Our mill owns many properties and knowing our qualified properties(machines,store and Cereals in the store)
                 allows to you see the quality of the service we provide.
                 Because having qualified machines certainly will help the services to be qualified.
@@ -41,19 +51,19 @@
             </p>
         </section>
 
-        <section class="property-main__our-property">
+        <section class="col-sm-5 card">
         <img class="propery-main__machines__grinding-machine property-main__our-property__image" src="Photos/MillMachine2.jpg" alt="Mill machine photo">
         <p class="property-main__machines__paragraph">
             <b>If you have a fear of the disturbance from our machine,you can check the sound that comes from our machine from the below audio.
             we  care our customers and the surrounding area
         </b></p>
-        <audio  controls
+        <audio class="w-100" controls
             src="Audios/Mill Machine sound.mp3"> </audio>
         </section>
 
-        <section class="property-main__our-property">
-            <img class="propery-main__our-store__image property-main__our-property__image" src="Photos/Cereals-in-store3.jpg" alt=" sack full cereals in warehous">
-        <p class="propery-main__our-store__paragraph">
+        <section class="col-sm-5 card p-0">
+            <img class="" src="Photos/Cereals-in-store3.jpg" alt=" sack full cereals in warehous">
+        <p class="p-5">
             We owned  a good quality warehouse,which help us to store our cereals in clean place.
             As you see we store the cereals in a clean place,we hope that you will believe us for the quality of cereals we serve. 
             For there you can come and visit  all in deep
@@ -61,51 +71,75 @@
         </section>
 
 
-        <section class="property-main__our-property property-main__our-compound">
-            <img class="property-main__our-compound__image property-main__our-property__image" src="Photos/compound.jpg" alt="Green area with areas where kids play ">
-            <p class="property-main__our-compound__paragraph">
-                We do our our best to care our customers.For that purpose we built area where kids play where you keeps your kids there while you are at the mill house till you finish your work.
-                The green area also include a place where you can stay till your banal reach.
-                These all the mill house, store and the green area are in one compound which we owned.
-            </p>
+        <section class="card col-sm-10  ">
+            <div class="row p-0">
+                <img class=" col-sm-6 p-0" src="Photos/compound.jpg" alt="Green area with areas where kids play ">
+                <p class="col-sm-6">
+                    We do our our best to care our customers.For that purpose we built area where kids play where you keeps your kids there while you are at the mill house till you finish your work.
+                    The green area also include a place where you can stay till your banal reach.
+                    These all the mill house, store and the green area are in one compound which we owned.
+                </p>
+            </div>
         </section>
 
 
     </main>
-    <footer class="footer">
-        <div class="footer__about-us" >
-        <p class="footer__about-us-head">More about us</p>
-        <ul>
-            <li><a href="AboutUs.html#our_story">our story</a></li>
-            <li><a href="ContactUs.html#FAQ"> FAQ's</a></li>
-            <li><a href="AboutUs.html#Mission">Mission</a></li>
-            <li><a href="AboutUs.html#Goal">Goal</a></li>
-        </ul>
-        </div>
-    <div class="footer__contact">
-        <p class="footer__contact__contact-header">Contact</p>
-        <a href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="Photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
-        <a href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
-    <div class="footer__contact__social-icons">
-            <a  href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
-           <a  href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/twitteicon.png" alt="twitter image icon" ></a>
-           <a  href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
-       </div>    
-    </div>
-    <section class="footer__privacy">
-        
-        <div class="footer__privacy__div">
-            <p class="footer__privacy-rights"> All rights reserved</p>
-            <div class="footer__privacy__div__div">
-                <img class="footer__privacy__copyright--resize" src="Photos/copyrighticon.png" alt="copyright icon image" > 
-                <p class="footer__privacy__year--positioning">2022</p>
+    
+    <footer class="container-fluid row gy-5  mt-5 bg-dark pb-5 justify-content-around">
+
+        <div class="border-bottom row m-0 justify-content-around ">
+
+            <div class="col-sm-5 p-0 mb-2 justify-content-center" >
+                <p class="text-white h2 m-4">More about us</p>
+                <ul class="justify-content-center ms-5">
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#our_story">our story</a></li>
+                    <li><a class="text-white text-decoration-none" href="ContactUs.html#FAQ"> FAQ's</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Mission">Mission</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Goal">Goal</a></li>
+                </ul>
             </div>
-           
-        </div>
-            <p class="footer__privacy__policy--positioning"><a href="Privacy policy.html">privacy policy</a></p> 
+
+            <div class="col-sm-5 p-0 mb-2 text-center"> 
+                <p class="text-white h2 m-4">Contact</p>
+                <div class="row gx-0 justify-content-center">
+                <a class="text-white col-sm-5 text-decoration-none" href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
+                <a class="text-white col-sm-5 text-decoration-none" href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
+            </div>
+                
+              <div class="row  justify-content-center">
+                    <a  class="col-3" href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
+                    <a  class="col-3" href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="photos/twitteicon.png" alt="twitter image icon" ></a>
+                    <a  class="col-3" href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
+              </div>
+
+            </div>
+        </div>       
         
-        </section>   
-    </footer>
-    <script src="Js/script.js"></script>
+        <section class="row mt-1">
+            <div class="border-end col-sm-2  gx-3">
+                <p class="col text-white"> All rights reserved</p>
+                <div class="row">
+                    <!-- <img class="col"  src="photos/copyrighticon.png" alt="copyright icon image" >  -->
+                    <p class="col-1 pe-0 text-white">&#169</p>
+                    <p class="col text-white">2022</p>
+                </div>
+            </div>
+                <p class="col-sm-2 ml-0"><a class="text-decoration-none text-white" href="Privacy policy.html">privacy policy</a></p> 
+        </section>
+
+        </footer>
+        
+        
+            <script src="js/bootstrap.js"></script>
+            <!-- <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+          ></script> -->
 </body>
 </html>

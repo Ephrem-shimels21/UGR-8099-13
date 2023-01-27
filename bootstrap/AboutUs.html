@@ -5,95 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUs</title>
-    <link rel="stylesheet" href="CSS/Header and Footer.css">
-    <link rel="stylesheet" href="CSS/AboutUs.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__header-image" src="Photos/Aboutusbackground.png" alt="background image for at the header part"><br>
-        <div class="header__log-container" >
-            <img  class ="header__logo-container__logo-image" src="Photos/logo11.png" alt="logo our company">
-        </div>
-        <nav class="header__navigations-container">
-            <ul class="header__navigations-container__unorderd">
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="index.html"> Home</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="DailyStatus.html">Daily Status</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="AvailableCereals.html">Available Cereals</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="OurProperties.html">Our properties</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="Announcements.html">Announcements</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link header__navigations-container__unorderd__current-page" href="AboutUs.html">About Us</a></li>
-                <li class="header__navigations-container__unorderd__navigation1"><a class="navigations-container__unorderd__navigation-link" href="ContactUs.html"> Contact Us</a></li>
-            </ul>
-            <div class="toggler-bars">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header class="position-relative" style="height:320px;">
+        <img class="h-100 w-100 img-fluid" src="Photos/AvailableCerealsbackground.png" alt="background image for at the header part">   
+        <img  class =" img-fluid rounded-circle  position-absolute top-0 start-0 ms-1" src="Photos/logo11.png" alt="logo our company" style="height:150px;width:150px;">
+        <nav class="navbar navbar-expand-sm  position-absolute bottom-0 end-0  nav-tabs navbar-light" style="background-color: #717568;"  >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler btn-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item"><a class="nav-link  text-dark fs-5 "  href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="DailyStatus.html">Daily Status</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5 " href="AvailableCereals.html">Available Cereals</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="OurProperties.html">Our properties</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="Announcements.html">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5 active" aria-current ="page" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item "><a class="nav-link text-dark fs-5" href="ContactUs.html"> Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-        </nav>  
-    </header>    
+          </nav>
+</header>
    
-    <main class="about main">
-    <h1>About us</h1> 
-    <section class="about__mission" >
-        <a id="Mission"><h2>Our Mission</h2></a>
-        <p>
-            We prepare this site to inform our customers about daily status of our Mill house.So that they can adjust their daily schedule.
-            In addition to this we want to provide good quality cereals with good grinding services.
-            We want to satisify all our customers.
-            Visiting this site and coming to our mill house accordingly will save your time indeed you will do you job properly and become productive.  
-        </p>
-        <img class="about__mission__image" src="Photos/rsz_1productive.jpg" alt="time mangement" wi>
-    </section> 
-    <section  class="about__story">
-    <a id="our_story"><h2>our story</h2></a>
-        <p>
+    <main class="container-fluid row justify-content-center gy-5 p-5 ">
+    <h1 class="fs-1 text-center fw-bold mb-5">About us</h1> 
+    <section class="card col-sm-8 p-0 row" >
+        <a id="Mission" class="fw-bold text-center text-decoration-none col-sm-12" ><h2>Our Mission</h2></a>
+        <div class=" container-fluid row">
+            <p class="col-sm-6 fw-bold fs-5">
+                We prepare this site to inform our customers about daily status of our Mill house.So that they can adjust their daily schedule.
+                In addition to this we want to provide good quality cereals with good grinding services.
+                We want to satisify all our customers.
+                Visiting this site and coming to our mill house accordingly will save your time indeed you will do you job properly and become productive.  
+            </p>  
+            <img class="col-sm-6" src="Photos/rsz_1productive.jpg" alt="time mangement" wi>
+        </div>
+    </section>
+
+    <section  class=" col-sm-8 card row mt-5 p-0">
+    <a id="our_story"  class="fw-bold  text-center col-sm-12 text-decoration-none  "><h2>our story</h2></a>
+        <p class="col-sm-12 fw-bold fs-5 justify-content-center">
             We passed through hard and good time.We start from scratch with no properties by almost 0 capital.
             Those days our compound wasn't as now,it was so ugly. What help us to reach this status is hard working.
             we hope we will do good things with brodened services even in another  cities.
         </p>
-        <img class="about__story__image" src="Photos/Growing.jpg" alt="showing that we grow in time">
+        <img class=" col-sm-12 p-0" src="Photos/Growing.jpg" alt="showing that we grow in time">
         </section>
-        <section class="about__Goal">
-         <a id="Goal"><h2>Our Goal</h2></a>
-         <p>Time brings and show many things.With time we see all good an bad things.
+
+    <section class="card col-sm-8">
+         <a id="Goal" class="fw-bold text-center text-decoration-none"><h2>Our Goal</h2></a>
+         <p class="fs-5 fw-bold">Time brings and show many things.With time we see all good an bad things.
             Hopefully in the future  our company will widened even in other cities than Addis </p>
     </section>  
     </main>
 
-    <footer class="footer">
-        <div class="footer__about-us" >
-        <p class="footer__about-us-head">More about us</p>
-        <ul>
-            <li><a href="AboutUs.html#our_story">our story</a></li>
-            <li><a href="ContactUs.html#FAQ"> FAQ's</a></li>
-            <li><a href="AboutUs.html#Mission">Mission</a></li>
-            <li><a href="AboutUs.html#Goal">Goal</a></li>
-        </ul>
-        </div>
-    <div class="footer__contact">
-        <p class="footer__contact__contact-header">Contact</p>
-        <a href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="Photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
-        <a href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
-    <div class="footer__contact__social-icons">
-            <a  href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
-           <a  href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/twitteicon.png" alt="twitter image icon" ></a>
-           <a  href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
-       </div>    
-    </div>
-    <section class="footer__privacy">
-        
-        <div class="footer__privacy__div">
-            <p class="footer__privacy-rights"> All rights reserved</p>
-            <div class="footer__privacy__div__div">
-                <img class="footer__privacy__copyright--resize" src="Photos/copyrighticon.png" alt="copyright icon image" > 
-                <p class="footer__privacy__year--positioning">2022</p>
+    <footer class="container-fluid row gy-5  mt-5 bg-dark pb-5 justify-content-around">
+
+        <div class="border-bottom row m-0 justify-content-around ">
+
+            <div class="col-sm-5 p-0 mb-2 justify-content-center" >
+                <p class="text-white h2 m-4">More about us</p>
+                <ul class="justify-content-center ms-5">
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#our_story">our story</a></li>
+                    <li><a class="text-white text-decoration-none" href="ContactUs.html#FAQ"> FAQ's</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Mission">Mission</a></li>
+                    <li><a class="text-white text-decoration-none" href="AboutUs.html#Goal">Goal</a></li>
+                </ul>
             </div>
-           
-        </div>
-            <p class="footer__privacy__policy--positioning"><a href="Privacy policy.html">privacy policy</a></p> 
+
+            <div class="col-sm-5 p-0 mb-2 text-center"> 
+                <p class="text-white h2 m-4">Contact</p>
+                <div class="row gx-0 justify-content-center">
+                <a class="text-white col-sm-5 text-decoration-none" href="tel:+251914541221" target="_blank"><img  class="footer__contact__contact-image" src="photos/phonecallicon.png" alt="phone call icon image"> +251914541221</a> 
+                <a class="text-white col-sm-5 text-decoration-none" href="mailto:eph21sz@gmail.com" target="_blank"><img class="footer__contact__contact-image" src="Photos/emailicon.png" alt="email icon image"></i>eph21sz@gmail.com</a>
+            </div>
+                
+              <div class="row  justify-content-center">
+                    <a  class="col-3" href="https://www.facebook.com/ephrem.shimels.39/" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/facebookicon1.png" alt="facebookicon" > </a>
+                    <a  class="col-3" href="https://twitter.com/tamire_ephrem?t=yYY04nHKdzYNDap7tTpHrQ&s=35" target="_blank"><img class="footer__contact__social-icons__social-media" src="photos/twitteicon.png" alt="twitter image icon" ></a>
+                    <a  class="col-3" href="https://t.me/ephremshimels" target="_blank"><img class="footer__contact__social-icons__social-media" src="Photos/telegramicon.png" alt="telegram image icon"> </a>
+              </div>
+
+            </div>
+        </div>       
         
-        </section>   
-    </footer>
-    <script src="Js/script.js"></script>
+        <section class="row mt-1">
+            <div class="border-end col-sm-2  gx-3">
+                <p class="col text-white"> All rights reserved</p>
+                <div class="row">
+                    <!-- <img class="col"  src="photos/copyrighticon.png" alt="copyright icon image" >  -->
+                    <p class="col-1 pe-0 text-white">&#169</p>
+                    <p class="col text-white">2022</p>
+                </div>
+            </div>
+                <p class="col-sm-2 ml-0"><a class="text-decoration-none text-white" href="Privacy policy.html">privacy policy</a></p> 
+        </section>
+
+        </footer>
+        <script src="js/bootstrap.js"></script>
 </body>
 </html>
