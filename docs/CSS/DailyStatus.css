@@ -1,0 +1,105 @@
+.daily-status-main{
+    display: grid;
+    grid-template-columns:auto auto;
+    column-gap: 30vw;
+    justify-content:space-evenly;
+    padding:5vw;
+    background-color: #EEEEEE;
+}
+.daily-status-main__available-services {
+    grid-row: 1 / span 2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+} 
+.daily-status-main__non-available-services{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.daily-status-main__available-services__service1 , 
+.daily-status-main__non-available-services__service1{
+    background-color: #342e37;
+    color:#fa824c;
+    margin-bottom:1px;
+    padding:5%;
+    font-size: large;
+}
+.daily-status-main__available-services__service1:hover ,
+.daily-status-main__non-available-services__service1:hover{
+    position: relative;
+    top:-20px;
+    background-color: #4d4730;
+    color:white;
+}
+.daily-status-main__available-services__h1 , 
+.daily-status-main__non-available-services__h2,
+.daily-status-main__date-time__h2,
+.daily-status-main__table-container__h2{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.daily-status-main__date-time{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.daily-status-main__date-time__counter{
+    border:3px solid #ff9b71 ;
+    padding:5%;
+}
+.daily-status-main__table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+ table,th,td {
+    border:2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    height: 55px;   
+}
+th{
+    height: 70px;
+}
+tr:nth-last-of-type(odd){
+    background-color: #808080;
+}
+tr:hover{
+    background-color: #171717;
+    color:white;
+}
+.daily-status-main__table-container--beautifying {
+    width: 100%;
+}
+
+@media(min-width:320px) and (max-width:480px){
+    .daily-status-main{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding:10vw;
+    }
+    .main.active{
+        padding-top:30vh;
+    }
+    .daily-status-main__available-services__h1 , 
+    .daily-status-main__non-available-services__h2,
+    .daily-status-main__date-time__h2,
+    .daily-status-main__table-container__h2{
+        font-size: large;
+        font-weight: 700;
+    }
+    .daily-status-main__available-services,
+    .daily-status-main__non-available-services{
+        margin-left:0;
+        padding-right:0;
+    }
+}
+
